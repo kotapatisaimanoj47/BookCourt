@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_weight="2"
+    android:background="@drawable/loginback">
+
+
+
+    <EditText
+        android:id="@+id/userid"
+
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="250dp"
+        android:hint="Email"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:background="@drawable/circleedges"/>
+
+    <EditText
+        android:id="@+id/passid"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userid"
+        android:layout_marginTop="60dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/circleedges"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/buttid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passid"
+        android:layout_marginTop="50dp"
+        android:text="Log In"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
